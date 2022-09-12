@@ -12,17 +12,21 @@ function submitFunction(){
     if(!validateName(name_field)){
         error_message += "Name is too short! (Minimum 5 characaters) <br>"
     }
+    if(!validateEmail(email_field.value)){
+        error_message += "Email is incorrect! (Minimum 3 characaters before the @ and 7 characters after) <br>"
+    }
+    if(!validateNumber(phone_field.value)){
+        error_message += "Incorrect phone number! <br>"
+    }
     if(!validateMessage(message_field)){
         error_message += "Message sent was too short! (Minimum 100 characters) <br>"
     }
+ 
     if(error_message != ''){
         error_div.classList.remove("hidden");
         error_div.innerHTML = error_message;
     }
     console.log(error_message);
-    //console.log(validateName(name_field));
-    //console.log(validateEmail(email_field.value));
-    //console.log(validateNumber(phone_field.value));
 }
 
 function validateName(name) {
