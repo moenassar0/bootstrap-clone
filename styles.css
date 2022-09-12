@@ -1,4 +1,5 @@
 *{
+    margin: 0;
     font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -18,7 +19,6 @@
     font-weight: bolder;
 }
 
-
 .top-nav {
     display: flex;
     justify-content: space-between;
@@ -33,6 +33,7 @@
     align-items: center;
     font-size: 18px;
     font-weight: bold;
+    color: white;
 }
 
 .links > li {
@@ -68,37 +69,43 @@
     color: white;
 }
 
-
 .image-container svg{
     color: white;
     width: 32px;
     height: 32px;
 }
 
-
+/* FOOTER */
 .footer{
     background-color: #24262b;
     padding: 70px 0;
 }
+
 .container{
     max-width: 1170px;
     margin: auto;
 }
+
 .row{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .image-col{
     width: 30%;
     padding: 30px 15px 0 15px;
     text-align: center;
 }
+
 .image-col img{
     width: 100%;
     height: 100%;
 }
-/* END CUSTOM FOOTER */
+
+.footer-end{
+    width: 100%;
+}
 
 /* ABOUT BLOCK */
 .about-container{
@@ -182,11 +189,28 @@
     background: #2196F3;
     color: white;
 }
+
+.other-headers{
+    color: #2C3E50;
+    font-size: 4rem;
+    font-weight: bolder;
+}
   
+@media screen and (max-width:900px){
+    .footer-col2{
+        width: 60%;
+    }
+    .contact-col{
+        width:100%;
+    }
+    .image-col{
+        width: 90%;
+    }
+}
 
 @media screen and (max-width:800px){
     .image-col{
-        width: 60%;
+        width: 100%;
     }
     .footer-container{
         padding-left: 0;
@@ -206,14 +230,3 @@
     }
 }
 
-@media screen and (max-width:900px){
-    .footer-col2{
-        width: 60%;
-    }
-    .contact-col{
-        width:100%;
-    }
-    .image-col{
-        width: 45%;
-    }
-}
