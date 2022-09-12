@@ -136,6 +136,9 @@
 
 /* CONTACT ME BLOCK */
 
+.contact-row{
+    height: 100px;
+}
 .contact-col{
     width: 60%;
     padding: 30px 15px 0 15px;
@@ -144,8 +147,9 @@
 
 .contact-col input{
     width: 90%;
-    height: 50px;
-    font-size: inherit;
+    height: 100%;
+    font-size: larger;
+    border-style: none;
 }
 
 .contact-col button{
@@ -198,6 +202,9 @@
 
 /* Utilities */
 
+.header{
+    padding-bottom: 0;
+}
 .btn {
     border: 2px solid white;
     background-color: white;
@@ -226,6 +233,8 @@
     color: #2C3E50;
     width: 32px;
     height: 32px;
+    padding: 10px 0 0 0;
+    margin: 0;
 }
 
 .white{
@@ -253,13 +262,13 @@
         width:100%;
     }
     .image-col{
-        width: 90%;
+        width: 50%;
     }
 }
 
 @media screen and (max-width:800px){
     .image-col{
-        width: 100%;
+        width: 60%;
     }
     .footer-container{
         padding-left: 0;
@@ -280,6 +289,25 @@
     .other-headers{
         padding-top: 10px;
         font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:700px){
+    .image-container h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .navbar-header{
+        padding: 0 0 0 10vw;
+        display: flex;
+        align-items: center;    
+    }
+    .navbar-header h1{
+        
+        width: 60%;
+        padding-left: 10px;
+        text-align: center;
+        font-size: 1.25rem;
     }
 }
 
