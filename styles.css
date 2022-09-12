@@ -13,6 +13,7 @@
 }
 
 .navbar-header{
+    padding-top: 15px;
     padding-left: 10%;
     width: 60%;
     color: white;
@@ -75,6 +76,11 @@
     height: 32px;
 }
 
+.image-container-text{
+    padding-top: 20px;
+    padding-bottom: 10vh;
+}
+
 /* FOOTER */
 .footer{
     background-color: #24262b;
@@ -84,6 +90,7 @@
 .container{
     max-width: 1170px;
     margin: auto;
+    width: 100%;
 }
 
 .row{
@@ -113,6 +120,9 @@
     margin-top: 20vh;
     padding-top: 10vh;
     background-color: #1ABC9C;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 400;
 }
 
 .about-container button{
@@ -144,8 +154,10 @@
 .footer-container{
     width: 100%;
     margin: 0;
+    padding: 9vh 0;
     background-color: #2C3E50;
     color: white;
+    font-size: larger;
 }
 
 .footer-col2{
@@ -161,12 +173,14 @@
 }
 
 .footer-end{
-    padding: 10px 10px;
     width: 100%;
+    margin: 0;
+    padding: 5vh 0;
     background-color: #1A252F;
     color: white;
     text-align: center;
 }
+
 
 
 /* Utilities */
@@ -227,6 +241,10 @@
     .image-container h1{
         font-size: 2.75rem;
         line-height: 2.75rem;
+    }
+    .other-headers{
+        width: 100%;
+        font-size: 2rem;
     }
 }
 
