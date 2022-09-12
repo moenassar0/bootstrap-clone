@@ -3,13 +3,26 @@ let email_field = document.getElementById("email");
 let phone_field = document.getElementById("phone-number");
 let message_field = document.getElementById("message");
 let submit_button = document.getElementById("submitmessage");
+let error_div = document.getElementById("error-message");
 
 submit_button.addEventListener("click", submitFunction);
 
 function submitFunction(){
-    console.log(validateName(name_field));
-    console.log(validateEmail(email_field.value));
-    console.log(validateNumber(phone_field.value));
+    error_message = "";
+    if(!validateName(name_field)){
+        error_message += "Name is too short! (Minimum 5 characaters) <br>"
+    }
+    if(!validateMessage(message_field)){
+        error_message += "Message sent was too short! (Minimum 100 characters) <br>"
+    }
+    if(error_message != ''){
+        error_div.classList.remove("hidden");
+        error_div.innerHTML = error_message;
+    }
+    console.log(error_message);
+    //console.log(validateName(name_field));
+    //console.log(validateEmail(email_field.value));
+    //console.log(validateNumber(phone_field.value));
 }
 
 function validateName(name) {
@@ -45,4 +58,11 @@ function validateNumber(number){
         }
     }
     return false;
+}
+
+function validateMessage(message){
+    if(message.value.length < 99){
+        return false;
+    }
+    return true;
 }

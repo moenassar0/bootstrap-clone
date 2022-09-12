@@ -155,6 +155,11 @@
     margin-bottom: 20px;
 }
 
+.error-message{
+    border-radius: 5px;
+    border: 5px;
+}
+
 /* Footer */
 
 .footer-container{
@@ -228,6 +233,11 @@
     font-size: 4rem;
     font-weight: bolder;
 }
+
+.hidden{
+    display: none;
+}
+
 
 /* Responsitivity */
   
