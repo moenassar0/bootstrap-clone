@@ -207,7 +207,7 @@
     text-align: center;
 }
 
-.footer-col2 a{
+.footer-icons{
     border-radius: 50%;
     border: white solid 2px;
     display: inline-flex;
@@ -226,6 +226,10 @@
 
 .footer-col2 svg{
     padding: 1px 6px;
+}
+
+.footer-col2 h1{
+    padding-bottom: 15px;
 }
 
 /* Utilities */
@@ -274,12 +278,22 @@
     font-size: 2.25rem;
     line-height: 2rem;
     font-weight: 700;
+    font-stretch:extra-expanded;
+    padding-top: 10vh;
 }
 
 .hidden{
     display: none;
 }
 
+.custom-line{
+    width: 11px;
+    height: 4px;
+    background-color: #2c3e50;
+    border-radius: 1rem;
+    border-color: #2c3e50;
+    text-align: center;
+}
 
 /* Responsitivity */
   
@@ -316,7 +330,7 @@
         line-height: 2.75rem;
     }
     .other-headers{
-        padding-top: 10px;
+        padding-top: 10vh;
         font-size: 2rem;
     }
 }
