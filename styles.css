@@ -114,16 +114,6 @@
     color: blue;
 }
 
-/* FOOTER */
-.footer{
-    background-color: #24262b;
-    padding: 70px 0;
-}
-
-.footer-end{
-    width: 100%;
-}
-
 /* ABOUT BLOCK */
 .about-container{
     width:100%;
@@ -175,7 +165,23 @@
     text-align: center;
 }
 
+.message{
+    height: 125px;
+}
+
+.message-row{
+    padding-bottom: 10vh;
+}
+
 /* Footer */
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footer-end{
+    width: 100%;
+}
 
 .footer-container{
     width: 100%;
