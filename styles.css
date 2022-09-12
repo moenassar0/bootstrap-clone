@@ -205,6 +205,16 @@
     color: white;
 }
 
+.star{
+    color: #2C3E50;
+    width: 32px;
+    height: 32px;
+}
+
+.white{
+    color: white;
+}
+
 .other-headers{
     color: #2C3E50;
     font-size: 4rem;
