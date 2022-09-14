@@ -10,6 +10,13 @@
         $phone_number = $_POST['phone_number'];
         $message = $_POST['message'];
     
-        echo $full_name . " " . $message;
+        $query = $mysqli->prepare("INSERT INTO `messages` (`full_name`, `email`, `phone_number`, `message`) VALUES (?, ?, ?, ?)");
+        $query->bind_param("ssss", $full_name, $email, $phone_number, $message);
+        $query->execute();
+
+        $response = [];
+        $response["sucess"] = true;
+        $json = json_encode($response);
+        echo $json;
     }
 ?>

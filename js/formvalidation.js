@@ -28,6 +28,9 @@ function submitFunction(){
         error_div.classList.remove("hidden");
         error_div.innerHTML = error_message;
     }
+    else{
+
+    }
     console.log(error_message);
 }
 
@@ -73,3 +76,5 @@ function validateMessage(message){
     }
     return true;
 }
+
+
