@@ -18,6 +18,14 @@ selectAPI(api_url);
 
 function show(data) {
 	for(let i = 0; i < data.length; i++){
-        console.log(data[i].full_name);
+        var row = table.insertRow();
+        var cell = row.insertCell();
+        cell.innerHTML = data[i].full_name;
+        var cell = row.insertCell();
+        cell.innerHTML = data[i].email;
+        var cell = row.insertCell();
+        cell.innerHTML = data[i].phone_number;
+        var cell = row.insertCell();
+        cell.innerHTML = data[i].message;
     }
 }
