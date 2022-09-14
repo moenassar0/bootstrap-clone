@@ -10,13 +10,13 @@ async function selectAPI(url) {
 	// Storing data in form of JSON
 	var data = await response.json();
 	console.log(data);
-	show(data);
+	createTable(data);
 }
 
 // Calling that async function
 selectAPI(api_url);
 
-function show(data) {
+function createTable(data) {
 	for(let i = 0; i < data.length; i++){
         var row = table.insertRow();
         var cell = row.insertCell();

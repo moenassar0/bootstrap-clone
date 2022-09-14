@@ -25,12 +25,15 @@ function submitFunction(){
     }
  
     if(error_message != ''){
+        succes_div.classList.add("hidden");
         error_div.classList.remove("hidden");
         error_div.innerHTML = error_message;
     }
     else{
         error_div.classList.add("hidden");
         error_message = '';
+        succes_div.innerHTML = "Successfully sent the message!"
+        succes_div.classList.remove("hidden");
         sendRequest(name_field.value, email_field.value, phone_field.value, message_field.value);
     }
     console.log(error_message);
