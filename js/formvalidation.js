@@ -29,7 +29,9 @@ function submitFunction(){
         error_div.innerHTML = error_message;
     }
     else{
-
+        error_div.classList.add("hidden");
+        error_message = '';
+        sendRequest(name_field.value, email_field.value, phone_field.value, message_field.value);
     }
     console.log(error_message);
 }
@@ -76,5 +78,17 @@ function validateMessage(message){
     }
     return true;
 }
+
+function sendRequest(name, email, number, message){
+    fetch(`./insert-api.php` , {
+        method: 'POST',
+        body: new URLSearchParams({"full_name": name,
+                                    "email": email,
+                                    "phone_number": number,
+                                    "message": message}),
+    }).then(response => response.json()).then(data => console.log(data));
+}
+
+
 
 
